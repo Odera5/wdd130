@@ -13,7 +13,7 @@ h1 {
   color: darkblue;
 }
 
-/* Global image style */
+
 img {
   width: 150px;
   height: auto;
@@ -22,13 +22,13 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
-/* Required: limit main width */
+
 main {
   max-width: 840px;
   margin: 0 auto;
 }
 
-/* Required: aside styling */
+
 aside {
   width: 300px;
   margin: 20px auto;
@@ -38,25 +38,25 @@ aside {
   color: #333;
 }
 
-/* Required: aside image override */
+
 aside img {
   width: 200px;
   height: auto;
   box-shadow: none;
 }
 
-/* Required: profile image override */
+
 main img {
   width: 150px;
   height: auto;
 }
 
-/* Required: paragraph padding set to 0 */
+
 p {
   padding: 0;
 }
 
-/* Required: footer styling */
+
 footer {
   margin-top: 30px;
   border-top: 2px solid #ccc;
