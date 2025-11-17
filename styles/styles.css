@@ -7,12 +7,12 @@ nav a {
   color: white;
   padding: 20px;
   display: block;
+  text-decoration: none;
 }
 
 h1 {
   color: darkblue;
 }
-
 
 img {
   width: 150px;
@@ -22,12 +22,10 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
-
 main {
   max-width: 840px;
   margin: 0 auto;
 }
-
 
 aside {
   width: 300px;
@@ -38,24 +36,21 @@ aside {
   color: #333;
 }
 
-
 aside img {
   width: 200px;
   height: auto;
   box-shadow: none;
+  border: none;
 }
-
 
 main img {
   width: 150px;
   height: auto;
 }
 
-
 p {
   padding: 0;
 }
-
 
 footer {
   margin-top: 30px;
