@@ -1,14 +1,11 @@
-
 :root {
     --primary-color: #003049;
     --secondary-color: #d62828;
     --accent1-color: #f77f00;
-    
 
     --heading-font: Arial, sans-serif;
     --body-font: Verdana, sans-serif;
 }
-
 
 * {
     margin: 0;
@@ -21,12 +18,10 @@ body {
     color: var(--primary-color);
 }
 
-
 header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
-
 
 h1, h2 {
     font-family: var(--heading-font);
@@ -38,23 +33,39 @@ nav, p, section, article {
     padding: 8px;
 }
 
+/* ======================
+   HEADER GRID & NAV FLEX
+====================== */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Logo + nav */
+    align-items: center; /* Vertically center logo + nav */
+    gap: 20px;
+    padding: 16px 0;
+}
+
+header img.logo {
+    max-height: 60px; /* Adjust as needed */
+}
+
+header nav ul {
+    display: flex; /* Horizontal nav links */
+    justify-content: flex-end;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 header nav a {
-    display: block;       
-    margin: 8px 0;        
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
 }
 
-
-.socialmedia a {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-
+/* ======================
+   HERO SECTION
+====================== */
 .hero {
     position: relative;
 }
@@ -67,7 +78,7 @@ header nav a {
 
 .hero h1 {
     position: absolute;
-    top: 20px; 
+    top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
@@ -90,4 +101,49 @@ header nav a {
     float: right;
     width: 125px;
     margin-left: 10px;
+}
+
+/* ======================
+   ADVENTURES SECTION
+====================== */
+#adventures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 16px;
+}
+
+#adventures figure {
+    flex: 1 1 18%; /* Five figures horizontally */
+    text-align: center;
+}
+
+#adventures figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 16px;
+}
+
+footer img {
+    width: 40px; /* Adjust as needed */
+    height: auto;
+}
+
+/* ======================
+   SOCIAL MEDIA LINKS
+====================== */
+.socialmedia a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 10px;
 }
