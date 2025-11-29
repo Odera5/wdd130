@@ -201,7 +201,7 @@ footer img {
 #contact-form form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
 
 #contact-form input[type="text"],
@@ -215,16 +215,10 @@ footer img {
     width: 100%;
 }
 
-#contact-form input[type="radio"],
-#contact-form input[type="checkbox"] {
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
 #contact-form fieldset {
     border: 1px solid #ccc;
     border-radius: 6px;
-    padding: 10px;
+    padding: 12px;
 }
 
 #contact-form legend {
@@ -234,6 +228,21 @@ footer img {
 #contact-form label {
     display: block;
     margin-bottom: 6px;
+}
+
+#contact-form input[type="radio"],
+#contact-form input[type="checkbox"] {
+    margin-right: 6px;
+    vertical-align: middle;
+    transform: scale(1.1);
+}
+
+#contact-form .checkbox-group,
+#contact-form .radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
 }
 
 #contact-form button {
