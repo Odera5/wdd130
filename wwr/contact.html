@@ -26,7 +26,7 @@
     <main>
         <!-- COMPANY INFO SECTION -->
         <section id="company-info">
-            <h1>Contact Us</h1>
+            <h1>Contact Us - White Water Rafting Co.</h1>
             <p>We’d love to hear from you! Reach out for questions, reservations, or suggestions.</p>
 
             <h2>Our Information</h2>
@@ -35,7 +35,13 @@
             <p><strong>Email:</strong> info@wwrafting.com</p>
 
             <h3>Our Location</h3>
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15824.43048729286!2d3.9164595000000006!3d7.453344699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1764438524218!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>tle="Company Location">
+            <iframe 
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15824.43048729286!2d3.9164595000000006!3d7.453344699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1764438524218!5m2!1sen!2sng" 
+                title="Company Location"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </section>
 
@@ -68,19 +74,23 @@
 
                 <fieldset>
                     <legend>Purpose of Message:</legend>
-                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                    <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label><br>
+
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+
+                    <input type="radio" id="website" name="purpose" value="website">
+                    <label for="website">Website Suggestion</label>
                 </fieldset>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
 
-                <label>
-                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
-                </label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
 
-                <button type="submit">Submit Message</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>

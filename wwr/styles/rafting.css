@@ -178,6 +178,11 @@ footer img {
 #employees figure {
     flex: 1 1 200px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+#employees figure:hover {
+    transform: scale(1.05);
 }
 
 #employees img {
@@ -208,6 +213,7 @@ footer img {
 #contact-form input[type="radio"],
 #contact-form input[type="checkbox"] {
     margin-right: 8px;
+    vertical-align: middle;
 }
 
 #contact-form fieldset {
@@ -218,6 +224,11 @@ footer img {
 
 #contact-form legend {
     font-weight: bold;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 6px;
 }
 
 #contact-form button {
@@ -262,5 +273,9 @@ footer img {
         width: 90%;
         left: 5%;
         bottom: 10px;
+    }
+
+    #company-info iframe {
+        height: 250px;
     }
 }
